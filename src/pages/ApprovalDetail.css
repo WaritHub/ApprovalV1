@@ -4,18 +4,12 @@
   box-sizing: border-box;
 }
 
-#root {
+.container {
   display: flex;
   width: 90%;
   flex-direction: column;
-  margin: 4rem auto;
-}
-
-/* .container {
-  display: flex;
-  width: 90%;
-  flex-direction: column;
-  margin: 4rem auto;
+  margin: 1rem auto;
+  font-size: 16px;
 }
 
 .backPage{
@@ -24,12 +18,12 @@
   border: none;
   cursor: pointer;
   font-size: 16px;
-} */
+}
 
 /* column */
 
 /* Create two equal columns that floats next to each other */
-/* .columnApprove {
+.columnApprove {
   float: left;
   width: 60%;
 
@@ -41,19 +35,19 @@
   justify-content: center;
   align-items: center;
   display: flex;
-} */
+}
 /* Clear floats after the columns */
-/* .row:after {
+.row:after {
   content: "";
   display: table;
   clear: both;
 }
 .row{
   margin-top: 40px;
-} */
+}
 
 /* status button */
-/* .status-buttons {
+.status-buttons {
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -90,10 +84,10 @@
   color: #267800;
 }
 
-.orderAprrove{ */
+.orderAprrove{
   /* width: 455px;
   height: 35px; */
-  /* width: 50%;
+  width: 50%;
   padding: 7px 10px;
   margin-top: 30px;
   background-color: #DBECFD;
@@ -107,10 +101,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
 
 /* select page */
-/* .select-page{
+.select-page{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,10 +132,10 @@
   background-color: transparent;
   cursor: pointer;
   font-size: 14px;
-}  */
+} 
 
 /* content doc file */
-/* .boxDoc{
+.boxDoc{
   margin-top: 30px;
   width: 100%;
   height: auto;
@@ -149,11 +143,11 @@
   padding: 200px 100px;
   text-align: center;
   border-radius: 9px;
-  color: #242424; */
+  color: #242424;
 
-/* } */
+}
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-/* @media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 
   .columnApprove {
     width: 100%;
@@ -177,4 +171,4 @@
   .status-button{
     font-size: 13px;
   }
-} */
+}

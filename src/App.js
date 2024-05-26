@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
+// import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Approval from "./pages/Approval";
+import ApprovalDetail from "./pages/ApprovalDetail"
+import { FluentProvider, webLightTheme } from "@fluentui/react-components";
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <FluentProvider theme={webLightTheme}>
+    <BrowserRouter>
+      <Routes>
+        <Route>
+          <Route index element={<Approval />}/>
+          <Route path='/ApprovalDetail' element={<ApprovalDetail />} />
+          {/* <Route path="blogs" element={<Blogs />} /> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    </FluentProvider>
   );
 }
 
