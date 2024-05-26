@@ -83,7 +83,7 @@ function ApprovalDetail() {
     <FluentProvider theme={webLightTheme}>
       <div className="container">
         {/* back Page arrow left */}
-        <Link Link to = {"/"}>
+        <Link Link to = {"/"} style={{color: "inherit"}}>
         <button className="backPage">
           <svg
             width="24"
