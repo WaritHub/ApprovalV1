@@ -1,6 +1,6 @@
 import './Sidebar.css';
 import React from 'react';
-import { IStyleSet, Label, ILabelStyles, Pivot, PivotItem } from '@fluentui/react';
+import { Pivot, PivotItem } from '@fluentui/react';
 
 const Sidebar = () => {
     const details = [

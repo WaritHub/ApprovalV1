@@ -2,7 +2,6 @@ import React from 'react';
 import './ModalEdit.css';
 import { IoIosClose } from "react-icons/io";
 import { Field, Textarea} from "@fluentui/react-components";
-import { FluentProvider, webLightTheme } from "@fluentui/react-components";
 
 const Modal = ({ onClose, onConfirm}) => {
   return (
